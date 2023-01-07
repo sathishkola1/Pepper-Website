@@ -1,13 +1,822 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  font-size: 62.5%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #FFFAFF;
+  color: #151531;
+  /* overflow-x: hidden; */
+}
+header{
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 9.2rem;
+  background-color: #FFFAFF;
+  position: sticky;
+  padding: 0 11.6rem;
+  box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.start-menu {
+  margin-top: 2.7rem;
+}
+
+.mid-menu {
+  height: 3.9rem;
+  margin-top: 3rem;
+  padding: 0.6rem 1.5rem;
+}
+
+.mid-menu ul {
+  display: flex;
+  justify-content: space-between;
+}
+.mid-menu li:hover{
+  cursor: pointer;
+  color: #9D0AFF;
+}
+
+.menu-items {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+  margin-right: 4rem;
+
+}
+
+.contact {
+  margin-right: 0;
+}
+
+.end-menu {
+  margin-top: 2rem;
+  height: 5.3rem;
+}
+
+.end-menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart {
+  margin-right: 1.8rem;
+  width: 8.6rem;
+  height: 5.1rem;
+  border-radius: 1.6rem;
+  cursor: pointer;
+}
+.cart:hover{
+  background: #eee2f8;
+}
+
+.login button {
+  width: 8.6rem;
+  height: 5.1rem;
+  border: 0.1rem solid #9D0AFF;
+  border-radius: 1.6rem;
+  color: #9D0AFF;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+  background: none;
+  margin-right: 1.8rem;
+  cursor: pointer;
+}
+
+.getStarted button {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  width: 12.6rem;
+  height: 4.9rem;
+  border-radius: 1.6rem;
+  background: #9D0AFF;
+  color: #FFFAFF;
+  border: none;
+  cursor: pointer;
+}
+
+.head {
+  margin: 17rem 32.6rem 6rem;
+}
+
+.text1 {
+  font-family: 'Plus Jakarta Sans';
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 7.2rem;
+  height: 14.4rem;
+  text-align: center;
+  margin-bottom: 1.4rem;
+}
+
+.text2 {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+  text-align: center;
+  height: 4.2rem;
+  width: 43.7rem;
+  margin: 0 auto;
+}
+
+.text {
+  margin-bottom: 4rem;
+}
+
+.demoButton {
+  text-align: center;
+}
+
+.demoButton button {
+  width: 18.1rem;
+  height: 5.7rem;
+  background: #9D0AFF;
+  border-radius: 1.8rem;
+  border: none;
+  color: #FFFAFF;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 21px;
+  cursor: pointer;
+}
+
+.compInfo {
+  height: 33.2rem;
+  padding: 0 0.6rem;
+  margin-bottom: 10rem;
+}
+
+.trustees {
+  height: 15.6rem;
+  padding: 0rem 11.6rem;
+  margin-bottom: 10rem;
+}
+
+.trustText {
+  margin-top: 2.5rem;
+  font-family: 'Plus Jakarta Sans';
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.6rem;
+  text-align: center;
+}
+
+.trustComps {
+  margin-top: 3.3rem;
+  height: 7.2rem;
+  padding: 0rem 6rem;
+  position: relative;
+}
+
+.trustComps1 {
+  position: absolute;
+  top: 0;
+  height: 7.2rem;
+  margin-left: 0.5rem;
+}
+
+.trustComps2 {
+  position: absolute;
+  top: 0;
+  margin-left: 82.6rem;
+  height: 7.2rem;
+}
+
+.finances {
+  padding: 0rem 21.6rem;
+  height: 53.9rem;
+  position: relative;
+  margin-bottom: 14rem;
+}
+
+.financeCard {
+  background: #151531;
+  border-radius: 3.2rem;
+  height: 53.9rem;
+  padding: 8rem 0;
+}
+
+.finImg1 {
+  position: absolute;
+  top: 3.2rem;
+  display: inline;
+}
+
+.finImg2 {
+  position: absolute;
+  bottom: 2.7rem;
+  right: 21.5rem;
+}
+
+.financeTextHead {
+  font-family: 'Plus Jakarta Sans';
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 6.7rem;
+  text-align: center;
+  color: #FFFAFF;
+  margin: 0 33rem;
+}
+
+.financeTextBody {
+  margin: 1.2rem 34.1rem 6.1rem;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+  text-align: center;
+  color: rgba(255, 250, 255, 0.8);
+}
+
+.numbersCard {
+  width: 60rem;
+  height: 12.9rem;
+  background: rgba(255, 250, 255, 0.1);
+  border-radius: 3rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 6.6rem;
+  margin: 0 24rem;
+}
+
+.financenumber {
+  font-family: 'Plus Jakarta Sans';
+  font-weight: 700;
+  font-size: 3.4rem;
+  line-height: 4.4rem;
+  text-align: center;
+  color: #FFFAFF;
+}
+
+.financeText {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  text-align: center;
+  color: rgba(255, 250, 255, 0.8);
+}
+
+.vl {
+  border: solid 0.01rem rgb(68, 68, 68);
+}
+
+.features {
+  height: 14.8rem;
+  margin-bottom: 14rem;
+}
+
+.featuresTop {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.8rem;
+}
+
+.featuresBottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.facilities {
+  padding: 0 15.6rem;
+  height: 89.7rem;
+  margin-bottom: 14rem;
+}
+
+.facHead {
+  margin: 0 32.3rem 6rem;
+  height: 19.2rem;
+}
+
+.headText1 {
+  font-family: 'Plus Jakarta Sans';
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 6.7rem;
+  text-align: center;
+  color: #151531;
+}
+
+.headText2 {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+  text-align: center;
+  color: rgba(21, 21, 49, 0.8);
+  margin: 1.4rem 8.1rem 0;
+}
+
+.facBody {
+  height: 64.5rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 4rem;
+}
+.facCard {
+  padding: 4.6rem 4rem;
+  height: 30.2rem;
+  width: 37.3rem;
+  background: #FFFFFF;
+  box-shadow: 0 0.8rem 8rem rgba(21, 21, 49, 0.05);
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.facCard img {
+  width: 5.6rem;
+  height: 5.6rem;
+}
+
+.facCard div {
+  font-family: 'Plus Jakarta Sans';
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.1rem;
+  color: #151531;
+}
+
+.facCard p {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  color: rgba(21, 21, 49, 0.8);
+  margin-right: 1.8rem;
+}
+
+.threeCards {
+  padding: 0 15.6rem;
+  height: 164rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.threeCardContent {
+  height: 48rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.threeCardimg {
+  width: 54rem;
+}
+
+.threeCardbody {
+  width: 42rem;
+  height: 33.4rem;
+  margin-top: 7.3rem;
+}
+
+.threeCardbody div {
+  font-family: 'Plus Jakarta Sans';
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 6.7rem;
+  color: #151531;
+}
+
+.threeCardbody p {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+  color: rgba(21, 21, 49, 0.8);
+  margin: 1.2rem 0 4.2rem;
+}
+
+.threeCardbody li {
+  display: flex;
+  align-items: center;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  color: rgba(21, 21, 49, 0.8);
+}
+
+.threeCardbody img {
+  margin-right: 1.2rem;
+}
+
+.threeCardbody ul {
+  height: 10.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.threeCardContentMiddle {
+  flex-direction: row-reverse;
+}
+
+.ratingsContent {
+  height: 19rem;
+  margin: 14rem 82.8rem 6rem 11.6rem;
+}
+.ratingsHead div {
+  font-family: 'Plus Jakarta Sans';
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 6.7rem;
+  color: #151531;
+  height: 13.5rem;
+}
+
+.ratingsHead p {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+  color: rgba(21, 21, 49, 0.8);
+  width: 43.7rem;
+  height:4.2rem ;
+  margin-top: 1.2rem;
+}
+.ratingsCards{
+  height: 75rem;
+  margin-bottom: 14rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 6rem 0;
+  overflow: hidden;
+}
+.ratingsCardsrow{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.rowTwo{
+  padding-left: 2.2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.ratingsCardBody{
+  margin-right: 4rem;
+  width: 52rem;
+  height: 29rem;
+  background: #FFFFFF;
+  box-shadow: 0.1rem 0.1rem 8rem rgba(21, 21, 49, 0.05);
+  border-radius: 3rem;
+  padding: 4rem 4.6rem 3.9rem 3.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.ratingsCardBody p{
+  font-family: 'Plus Jakarta Sans';
+  font-weight: 500;
+  font-size: 2.2rem;
+  line-height: 2.9rem;
+  color: #151531;
+  width: 44.1rem;
+  }
+  .ratingsCardBody img{
+    width: 13.6rem;
+    height: 2.4rem;
+  }
+.ratingsCardBody div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.ratingsCardBodyChild div{
+  font-family: 'Plus Jakarta Sans';
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.6rem;
+  color: #151531;
+  width: 15.7rem;
+}
+.ratingsCardBodyChild p{
+  font-family: 'Plus Jakarta Sans';
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #151531;
+  width: 7.3rem;
+}
+.build{
+  padding: 0 11.6rem;
+  height: 55.8rem ;
+  display:flex;
+  justify-content: space-between;
+}
+.buildContent{
+  align-self: center;
+  height: 37.5rem;
+  margin-right: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.buildContent div{
+  font-family: 'Plus Jakarta Sans';
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 6.7rem;
+  color: #151531;
+}
+.buildContent p{
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  color: rgba(21, 21, 49, 0.8);
+  width: 36.7rem;
+}
+.buildContent button{
+  width: 14.2rem;
+  height: 5.7rem;
+  background: #9D0AFF;
+  border-radius: 1.8rem;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+  color: #FFFAFF;
+  border: none;
+  cursor: pointer;
+}
+.buildCardsSub{
+  background: #FFFFFF;
+  box-shadow: 1px 1px 80px rgba(21, 21, 49, 0.05);
+  border-radius: 30px;
+  width: 34rem;
+  height: 25.9rem;
+  padding: 4rem 3.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;      
+}
+.buildCardsSub div{
+  font-family: 'Plus Jakarta Sans';
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 2.9rem;
+  color: #151531;
+}
+.buildCardsSub p{
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+  color: rgba(21, 21, 49, 0.8);
+}
+.buildCardsSub img{
+  height: 5.6rem;
+  width: 5.6rem;
+}
+.buildCards{
+  width: 72rem;
+  display: flex;
+  justify-content: space-between;
+}
+.buildCardsLeft{
+  margin-right: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.buildCardsRight{
+  align-self: center;
+}
+.homeEndCard{
+  height: 48.9rem;
+  margin: 14rem 0;
+  padding: 0 20.6rem;
+  position: relative;
+}
+.homeEndCardSub{
+  height: 48.9rem;
+  background: #151531;
+  border-radius: 3.2rem;
+  padding: 10rem 30rem;
+}
+.homeEndCardImgOne{
+  position: absolute;
+}
+.homeEndCardImgTwo{
+  position: absolute;
+  bottom: 0;
+  left:113.7rem;
+}
+.homeEndCardRingRight{
+  position: absolute;
+  left: 111.1rem;
+}
+.homeEndCardRingLeft{
+  position: absolute;
+  bottom: 0;
+}
+.homeEndCardContent{
+  height: 28.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.homeEndCardText{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 19rem;
+}
+.homeEndCardTextHead{
+  font-family: 'Plus Jakarta Sans';
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 6.7rem;
+  text-align: center;
+  color: #FFFAFF;
+}
+.homeEndCardTextBody{
+  margin: 0 5.2rem;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  text-align: center;
+  color: rgba(255, 250, 255, 0.8);
+}
+.homeEndCardButtons{
+  height:5.9rem ;
+  padding: 0 6.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.homeEndCardButton1,.homeEndCardButton2{
+  width: 18rem;
+  height: 5.7rem;
+  background: #9D0AFF;
+  border-radius: 1.8rem;
+  border: none;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  color: #FFFAFF;
+  cursor: pointer;
+}
+.homeEndCardButton2{
+  width: 17.6rem;
+  height: 5.9rem;
+  border: 0.1rem solid #FFFAFF;
+  border-radius: 1.8rem;
+  background: none;
+}
+.footer{
+  height: 63.8rem;
+  background: #151531;
+  padding:10rem 11.6rem 6rem ;
+}
+.footerContent{
+  height:33.7rem;
+  margin-bottom: 12rem;
+  display: flex;
+  justify-content: space-between;
+}
+.footerContentLeft{
+  height: 25.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footerContentLeft img{
+  width: 14rem;
+  height: 3.9rem;
+}
+.footerContentLeft p{
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: rgba(255, 250, 255, 0.8);
+  width: 31rem;
+}
+.footerContentLeft button{
+  width: 12.7rem;
+  height: 4.9rem;
+  border: none;
+  background: #9D0AFF;
+  border-radius: 1.6rem;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  text-align: center;
+  color: #FFFAFF;
+  cursor: pointer;
+}
+.footerContentLeft ul{
+  margin-top: 1.5rem;
+  height: 2.4rem;
+  display: flex;
+}
+.footerContentLeft ul img{
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: 1.7rem;
+}
+.footerContentRight{
+  width: 38.3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.footerContentRightOne{
+  width: 14.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footerContentRightOne div{
+  font-family: 'Plus Jakarta Sans';
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.6rem;
+  color: #FFFAFF;
+  width: 11rem;
+}
+.footerContentRightOne ul{
+  height: 28.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footerContentRightOne ul li{
+  font-family: 'Plus Jakarta Sans';
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  color: #FFFAFF;
+}
+.footerContentRightTwo{
+  width: 15.4rem;
+  display: flex;
+  flex-direction: column;
+}
+.footerContentRightTwo div{
+  font-family: 'Plus Jakarta Sans';
+  font-weight: 600;
+  font-size: 1.99rem;
+  line-height: 2.6rem;
+  color: #FFFAFF;
+  margin-bottom: 2.8rem;
+  width: 15.4rem;
+}
+.footerContentRightTwo ul{
+  height: 8.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footerContentRightTwo ul{
+  font-family: 'Plus Jakarta Sans';
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  color: #FFFAFF;
+}
+footer{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  color: #FFFAFF;
+  width: 36.4rem;
+}
+.colorOne{
+  color: #00F59B;
+}
+.colorTwo{
+  color: #9D0AFF;
 }
