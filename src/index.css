@@ -12,7 +12,6 @@ body {
   font-family: 'Inter', sans-serif;
   background: #FFFAFF;
   color: #151531;
-  /* overflow-x: hidden; */
 }
 header{
   position: fixed;
@@ -29,6 +28,7 @@ header{
   position: sticky;
   padding: 0 11.6rem;
   box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
+
 }
 
 ul {
@@ -37,6 +37,11 @@ ul {
 
 .start-menu {
   margin-top: 2.7rem;
+}
+.start-menu img{
+  width: 12rem;
+  height: 3.3rem;
+  object-fit: contain;
 }
 
 .mid-menu {
@@ -55,11 +60,7 @@ ul {
 }
 
 .menu-items {
-  font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 2.1rem;
   margin-right: 4rem;
-
 }
 
 .contact {
@@ -95,19 +96,12 @@ ul {
   border-radius: 1.6rem;
   color: #9D0AFF;
   font-family: 'Inter';
-  font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 2.1rem;
   background: none;
   margin-right: 1.8rem;
   cursor: pointer;
 }
 
 .getStarted button {
-  font-family: 'Inter';
-  font-weight: 500;
-  font-size: 1.4rem;
-  line-height: 2.1rem;
   width: 12.6rem;
   height: 4.9rem;
   border-radius: 1.6rem;
@@ -116,7 +110,11 @@ ul {
   border: none;
   cursor: pointer;
 }
-
+.home{
+  width: 100%;
+  margin: 0 auto;
+  max-width: 151.2rem;
+}
 .head {
   margin: 17rem 32.6rem 6rem;
 }
@@ -126,16 +124,13 @@ ul {
   font-weight: 700;
   font-size: 6rem;
   line-height: 7.2rem;
-  height: 14.4rem;
   text-align: center;
+  height: 14.4rem;
   margin-bottom: 1.4rem;
 }
 
 .text2 {
   font-family: 'Inter';
-  font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 2.1rem;
   text-align: center;
   height: 4.2rem;
   width: 43.7rem;
@@ -159,8 +154,8 @@ ul {
   color: #FFFAFF;
   font-family: 'Inter';
   font-weight: 500;
-  font-size: 15px;
-  line-height: 21px;
+  font-size: 1.5rem;
+  line-height: 2.1rem;
   cursor: pointer;
 }
 
@@ -233,10 +228,6 @@ ul {
 }
 
 .financeTextHead {
-  font-family: 'Plus Jakarta Sans';
-  font-weight: 700;
-  font-size: 4.8rem;
-  line-height: 6.7rem;
   text-align: center;
   color: #FFFAFF;
   margin: 0 33rem;
@@ -245,9 +236,6 @@ ul {
 .financeTextBody {
   margin: 1.2rem 34.1rem 6.1rem;
   font-family: 'Inter';
-  font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 2.1rem;
   text-align: center;
   color: rgba(255, 250, 255, 0.8);
 }
@@ -271,36 +259,26 @@ ul {
   text-align: center;
   color: #FFFAFF;
 }
-
 .financeText {
-  font-family: 'Inter';
-  font-weight: 400;
-  font-size: 1.4rem;
-  line-height: 2.1rem;
   text-align: center;
   color: rgba(255, 250, 255, 0.8);
 }
-
 .vl {
   border: solid 0.01rem rgb(68, 68, 68);
 }
-
 .features {
   height: 14.8rem;
   margin-bottom: 14rem;
 }
-
 .featuresTop {
   display: flex;
   justify-content: space-between;
   margin-bottom: 2.8rem;
 }
-
 .featuresBottom {
   display: flex;
   justify-content: space-between;
 }
-
 .facilities {
   padding: 0 15.6rem;
   height: 89.7rem;
@@ -313,19 +291,12 @@ ul {
 }
 
 .headText1 {
-  font-family: 'Plus Jakarta Sans';
-  font-weight: 700;
-  font-size: 4.8rem;
-  line-height: 6.7rem;
   text-align: center;
   color: #151531;
 }
 
 .headText2 {
   font-family: 'Inter';
-  font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 2.1rem;
   text-align: center;
   color: rgba(21, 21, 49, 0.8);
   margin: 1.4rem 8.1rem 0;
@@ -363,10 +334,6 @@ ul {
 }
 
 .facCard p {
-  font-family: 'Inter';
-  font-weight: 500;
-  font-size: 1.6rem;
-  line-height: 2.1rem;
   color: rgba(21, 21, 49, 0.8);
   margin-right: 1.8rem;
 }
@@ -396,18 +363,11 @@ ul {
 }
 
 .threeCardbody div {
-  font-family: 'Plus Jakarta Sans';
-  font-weight: 700;
-  font-size: 4.8rem;
-  line-height: 6.7rem;
   color: #151531;
 }
 
 .threeCardbody p {
   font-family: 'Inter';
-  font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 2.1rem;
   color: rgba(21, 21, 49, 0.8);
   margin: 1.2rem 0 4.2rem;
 }
@@ -415,10 +375,6 @@ ul {
 .threeCardbody li {
   display: flex;
   align-items: center;
-  font-family: 'Inter';
-  font-weight: 500;
-  font-size: 1.4rem;
-  line-height: 2.1rem;
   color: rgba(21, 21, 49, 0.8);
 }
 
@@ -442,19 +398,12 @@ ul {
   margin: 14rem 82.8rem 6rem 11.6rem;
 }
 .ratingsHead div {
-  font-family: 'Plus Jakarta Sans';
-  font-weight: 700;
-  font-size: 4.8rem;
-  line-height: 6.7rem;
   color: #151531;
   height: 13.5rem;
 }
 
 .ratingsHead p {
   font-family: 'Inter';
-  font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 2.1rem;
   color: rgba(21, 21, 49, 0.8);
   width: 43.7rem;
   height:4.2rem ;
@@ -540,17 +489,9 @@ ul {
   justify-content: space-between;
 }
 .buildContent div{
-  font-family: 'Plus Jakarta Sans';
-  font-weight: 700;
-  font-size: 4.8rem;
-  line-height: 6.7rem;
   color: #151531;
 }
 .buildContent p{
-  font-family: 'Inter';
-  font-weight: 500;
-  font-size: 1.6rem;
-  line-height: 2.1rem;
   color: rgba(21, 21, 49, 0.8);
   width: 36.7rem;
 }
@@ -560,9 +501,6 @@ ul {
   background: #9D0AFF;
   border-radius: 1.8rem;
   font-family: 'Inter';
-  font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 2.1rem;
   color: #FFFAFF;
   border: none;
   cursor: pointer;
@@ -587,9 +525,6 @@ ul {
 }
 .buildCardsSub p{
   font-family: 'Inter';
-  font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 2.1rem;
   color: rgba(21, 21, 49, 0.8);
 }
 .buildCardsSub img{
@@ -628,7 +563,7 @@ ul {
 .homeEndCardImgTwo{
   position: absolute;
   bottom: 0;
-  left:113.7rem;
+  left:113rem;
 }
 .homeEndCardRingRight{
   position: absolute;
@@ -651,20 +586,11 @@ ul {
   height: 19rem;
 }
 .homeEndCardTextHead{
-  font-family: 'Plus Jakarta Sans';
-  font-weight: 700;
-  font-size: 4.8rem;
-  line-height: 6.7rem;
   text-align: center;
   color: #FFFAFF;
 }
 .homeEndCardTextBody{
   margin: 0 5.2rem;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.6rem;
-  line-height: 2.1rem;
   text-align: center;
   color: rgba(255, 250, 255, 0.8);
 }
@@ -680,10 +606,6 @@ ul {
   background: #9D0AFF;
   border-radius: 1.8rem;
   border: none;
-  font-family: 'Inter';
-  font-weight: 500;
-  font-size: 1.4rem;
-  line-height: 2.1rem;
   color: #FFFAFF;
   cursor: pointer;
 }
@@ -716,9 +638,6 @@ ul {
   height: 3.9rem;
 }
 .footerContentLeft p{
-  font-family: 'Inter';
-  font-weight: 500;
-  font-size: 1.6rem;
   line-height: 2.2rem;
   color: rgba(255, 250, 255, 0.8);
   width: 31rem;
@@ -729,10 +648,6 @@ ul {
   border: none;
   background: #9D0AFF;
   border-radius: 1.6rem;
-  font-family: 'Inter';
-  font-weight: 500;
-  font-size: 1.4rem;
-  line-height: 2.1rem;
   text-align: center;
   color: #FFFAFF;
   cursor: pointer;
@@ -800,17 +715,9 @@ ul {
   justify-content: space-between;
 }
 .footerContentRightTwo ul{
-  font-family: 'Plus Jakarta Sans';
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 2.1rem;
   color: #FFFAFF;
 }
 footer{
-  font-family: 'Inter';
-  font-weight: 400;
-  font-size: 1.4rem;
-  line-height: 2.1rem;
   color: #FFFAFF;
   width: 36.4rem;
 }
@@ -819,4 +726,53 @@ footer{
 }
 .colorTwo{
   color: #9D0AFF;
+}
+.fontStyleA{
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+}
+.fontStyleB{
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
+ .fontStyleC{
+  font-family: 'Plus Jakarta Sans';
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 6.7rem;
+}
+.fontStyleD{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
+.fontStyleE{
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+}
+.fontStyleF{
+  font-family: 'Plus Jakarta Sans';
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+}
+
+@media screen and (max-width:391px){
+  .navbar{
+    width: 100%;
+    padding:0 1.9rem;
+  }
+  .mid-menu,.login,.getStarted{
+    display: none;
+  }
+  .start-menu{
+    width:11rem ;
+    height: 3.1rem;
+  }
 }

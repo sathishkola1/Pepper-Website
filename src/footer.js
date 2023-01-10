@@ -10,8 +10,8 @@ const Footer = () => {
                 <div className="footerContent">
                     <div className="footerContentLeft">
                         <img src={brandLogo} alt="brand-img"/>
-                        <p>Pepper is one of the most reliable delievery patlform magement service to automate your network.</p>
-                        <button>Get Started</button>
+                        <p className="fontStyleE">Pepper is one of the most reliable delievery patlform magement service to automate your network.</p>
+                        <button  className="fontStyleB">Get Started</button>
                         <ul>
                             <li><img src={linkedIn} alt="linkedIn-icon"/></li>
                             <li><img src={twitter} alt="twitter-icon"/></li>
@@ -35,7 +35,7 @@ const Footer = () => {
                         </div>
                         <div className="footerContentRightTwo">
                             <div>Template pages</div>
-                            <ul>
+                            <ul className="fontStyleF">
                                 <li>Style guide</li>
                                 <li>Licenses</li>
                                 <li>Changelog</li>
@@ -43,7 +43,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <footer>
+                <footer className="fontStyleD">
                     <p><span>&copy;</span>All rights reserved.<span className="colorOne">Flowset</span>.Powered by <span className="colorTwo">Wf</span>.</p>
                 </footer>
             </div>
