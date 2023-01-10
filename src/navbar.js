@@ -8,7 +8,7 @@ const Navbar = () => {
 
     const main=async()=>{
     try{
-        let {data} = await axios.get('http://localhost:5000/api/components')
+        let {data} = await axios.get('https://pepper-adminpanel.onrender.com/api/components')
         setImage(data.image)
     }
     catch(err){
